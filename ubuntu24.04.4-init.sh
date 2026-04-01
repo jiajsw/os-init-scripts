@@ -35,8 +35,8 @@ sudo locale-gen en_US.UTF-8 zh_CN.UTF-8
 
 sudo apt install -y flatpak gnome-software-plugin-flatpak
 
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
+sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
 
 flatpak update
