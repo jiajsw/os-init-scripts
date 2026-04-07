@@ -24,6 +24,9 @@ Pin: release a=*
 Pin-Priority: -10
 EOF
 
+# 验证拦截是否生效
+# apt-cache policy snapd 
+
 sudo apt install vim -y
 # 设置行号 /etc/vim/vimrc
 echo 'set nu' | sudo tee -a /etc/vim/vimrc
