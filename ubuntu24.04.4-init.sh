@@ -52,7 +52,7 @@ EOF
 
 sudo apt update && sudo apt upgrade -y
 
-sudo apt install -y vim fonts-firacode fonts-wqy-microhei fonts-wqy-zenhei
+sudo apt install -y fonts-firacode fonts-wqy-microhei fonts-wqy-zenhei
 
 # 刷新字体
 sudo fc-cache -f -v
