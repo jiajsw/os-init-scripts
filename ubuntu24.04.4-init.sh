@@ -43,3 +43,16 @@ sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flat
 sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
 
 flatpak update
+
+cat << 'EOF' > ~/.bashrc
+_OLD_PS1="$PS1"
+_MY_VAR_INIT=1
+PROMPT_COMMAND='PS1="$_OLD_PS1[$_MY_VAR_INIT]\n\\$ ";((_MY_VAR_INIT++))'
+EOF
+
+sudo apt update && sudo apt upgrade -y
+
+sudo apt install -y vim fonts-firacode fonts-wqy-microhei fonts-wqy-zenhei
+
+# 刷新字体
+sudo fc-cache -f -v
